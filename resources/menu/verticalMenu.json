@@ -1,0 +1,132 @@
+{
+  "menu": [
+    {
+      "url": "dashboard",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons ti ti-home",
+      "slug": "dashboard.index",
+      "permission_code": ""
+    },
+    {
+      "url": "app/merchant",
+      "name": "Merchant List",
+      "icon": "menu-icon tf-icons ti ti-home",
+      "slug": "merchant.index",
+      "permission_code": "merchant"
+    },
+    {
+      "url": "fleet",
+      "route": "fleet",
+      "name": "Fleet",
+      "icon": "menu-icon tf-icons ti ti-tool",
+      "slug": "fleet",
+      "permission_code": "fleet"
+    },
+    {
+      "url": "fleet-tyre",
+      "route": "fleet-tyre",
+      "name": "Inventory",
+      "icon": "menu-icon tf-icons ti ti-tower",
+      "slug": "fleet-tyre",
+      "permission_code": "fleet-tyre"
+    },
+    {
+      "name": "Master Data",
+      "icon": "menu-icon tf-icons ti ti-file-dollar",
+      "slug": [
+        "fleet-brand",
+        "fleet-configuration",
+        "fleet-segment",
+        "fleet-good",
+        "fleet-category",
+        "tyre-brand","fleet"
+      ],
+      "permission_code":[
+        "fleet-brand",
+        "fleet-configuration",
+        "fleet-segment",
+        "fleet-good",
+        "fleet-category",
+        "tyre-brand","fleet"
+      ],
+      "submenu": [
+        {
+          "url": "fleet-brand",
+          "route": "fleet-brand",
+          "name": "Fleet Brand",
+          "slug": "fleet-brand",
+          "permission_code": "fleet-brand"
+        },
+        {
+          "url": "fleet-configuration",
+          "route": "fleet-configuration",
+          "name": "Fleet Configuration",
+          "slug": "fleet-configuration",
+          "permission_code": "fleet-configuration"
+        },
+        {
+          "url": "fleet-good",
+          "route": "fleet-good",
+          "name": "Fleet Goods",
+          "slug": "fleet-good",
+          "permission_code": "fleet-good"
+        },
+        {
+          "url": "fleet-segment",
+          "route": "fleet-segment",
+          "name": "Fleet Segment",
+          "slug": "fleet-segment",
+          "permission_code": "fleet-segment"
+        },
+        {
+          "url": "fleet-category",
+          "route": "fleet-category",
+          "name": "Fleet Category",
+          "slug": "fleet-category",
+          "permission_code": "fleet-category"
+        },
+        {
+          "url": "tyre-brand",
+          "route": "tyre-brand",
+          "name": "Tyre Brand",
+          "slug": "tyre-brand",
+          "permission_code": "tyre-brand"
+        }
+      ]
+    },
+    {
+      "name": "Setting",
+      "icon": "menu-icon tf-icons ti ti-settings",
+      "slug": [
+        "change-password.index",
+        "merchant-edit.index",
+        "setting-role",
+        "setting-user"
+      ],
+      "permission_code": ["change_password","merchant_edit","setting-role","setting-user"],
+      "submenu": [
+        {
+          "url": "setting/change-password",
+          "name": "Change Password",
+          "icon": "menu-icon tf-icons ti ti-box",
+          "slug": "change-password.index",
+          "permission_code": "change_password"
+        },
+        {
+          "url": "setting/role",
+          "name": "User Role",
+          "icon": "menu-icon tf-icons ti ti-box",
+          "slug": "setting-role",
+          "permission_code": "setting-role"
+        },
+        {
+          "url": "setting/user",
+          "name": "User List",
+          "icon": "menu-icon tf-icons ti ti-box",
+          "slug": "setting-user",
+          "permission_code": "setting-user"
+        }
+      ]
+    }
+  ]
+}
